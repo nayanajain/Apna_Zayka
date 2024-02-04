@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+
+<definition name="template-dashboard"
+		template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	
+	<definition name="template-dashboard2"
+		template="/WEB-INF/views/layout2.jsp">
+		<put-attribute name="title" value="" />
+		
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		
+		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	
+	<definition name="template-dashboard3"
+		template="/WEB-INF/views/layout3.jsp">
+		<put-attribute name="title" value="" />
+		
+		<put-attribute name="body" value="" />
+		
+	</definition>
+	
+	
+	
+	<definition name="reg" extends="template-dashboard">
+	<put-attribute name="title" value="my fav" />
+	<put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+	
+	</definition>
+	
+	<definition name="dashboard" extends="template-dashboard2">
+	<put-attribute name="title" value="my fav" />
+	<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	
+	</definition>  
+	
+	<definition name="changepassword" extends="template-dashboard">
+	<put-attribute name="title" value="change oassword" />
+	<put-attribute name="body" value="/WEB-INF/views/changepassword.jsp" />
+	
+	</definition>
+	
+	
+	<definition name="registerUser" extends="template-dashboard">
+	<put-attribute name="title" value="my fav" />
+	<put-attribute name="body" value="/WEB-INF/views/registerUser.jsp" />
+	
+	</definition>
+	
+	<definition name="showdetails" extends="template-dashboard">
+	<put-attribute name="title" value="details of hotel" />
+	<put-attribute name="body" value="/WEB-INF/views/showDetail.jsp" />
+	
+	</definition>
+	
+	<definition name="checkout" extends="template-dashboard">
+	<put-attribute name="title" value="details of hotel" />
+	<put-attribute name="body" value="/WEB-INF/views/checkout.jsp" />
+	
+	</definition>  
+	
+	<definition name="receipt" extends="template-dashboard">
+	<put-attribute name="title" value="details of hotel" />
+	<put-attribute name="body" value="/WEB-INF/views/receipt.jsp" />
+	
+	</definition>
+	
+	
+	<definition name="home" extends="template-dashboard">
+	<put-attribute name="title" value="home page" />
+	<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	
+	</definition>
+	
+	<definition name="cartdetails" extends="template-dashboard">
+	<put-attribute name="title" value="view cart page" />
+	<put-attribute name="body" value="/WEB-INF/views/cartDetails.jsp" />
+	
+	</definition>
+	
+	<definition name="gm" extends="template-dashboard">
+	<put-attribute name="title" value="view cart page" />
+	<put-attribute name="body" value="/WEB-INF/views/gm.jsp" />
+	
+	</definition>
+	
+	
+	
+	
+	
+	<definition name="loginpage" extends="template-dashboard2">
+	<put-attribute name="title" value="home page" />
+	<put-attribute name="body" value="/WEB-INF/views/loginpage.jsp" />
+	
+	</definition>
+	
+	
+	<definition name="index" extends="template-dashboard3">
+	<put-attribute name="title" value="home page" />
+	<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	
+	</definition>
+	
+	<definition name="forgotpassword" extends="template-dashboard">
+	<put-attribute name="title" value="Forgot Password page" />
+	<put-attribute name="body" value="/WEB-INF/views/forgotpassword.jsp" />
+	
+	</definition>
+	
+	<definition name="resetpassword" extends="template-dashboard">
+	<put-attribute name="title" value="Forgot Password page" />
+	<put-attribute name="body" value="/WEB-INF/views/resetpassword.jsp" />
+	
+	</definition>
+	
+	
+	
+	
+	
+	</tiles-definitions>
